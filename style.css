@@ -1,0 +1,180 @@
+/* CSS Document */
+
+html {
+	font-size: 18px;
+}
+
+body {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 1rem;
+}
+
+.head {
+	background-color: black;
+	color: white;
+}
+
+.company {
+	display: flex;
+	align-items: center;
+	margin-left: 120px;
+	padding: 1rem 0 1rem 0.5rem;
+}
+
+.company img {
+	height: 1.5rem;
+	margin-right: 1rem;
+}
+
+.intro {
+	background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
+	height: 40rem;
+	color: white;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.box {
+	background-color: black;
+	width: 20rem;
+	position: relative;
+	top: 23rem;
+	padding: 3rem 4rem;
+	margin-left: 7rem;
+	
+}
+
+.box span {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-weight: bold;
+}
+
+.box h1 {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 2rem;
+	font-weight: bold;
+	position: relative;
+	top: 0.75rem;
+}
+
+nav {
+	background-color: firebrick;
+	color: antiquewhite;
+}
+
+.navigation {
+	display: flex;
+	padding: 0.75rem 10rem;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.product {
+	margin: 3rem 0 0 0;
+}
+
+.main {
+	display: flex;
+	justify-content: space-around;
+}
+
+.main .container {
+	border: 4px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 9rem;
+	padding: 2rem 0;
+	width: 20%;
+} 
+
+.main .container img {
+	width: 60%;
+}
+
+.info .container {
+	background-color: black;
+	color: white;
+	width: 31.7%;
+	padding: 2rem 2rem 1rem 2rem;
+}
+
+.info {
+	display: flex;
+	justify-content: space-around;
+	margin: 3rem 0 5rem 0;
+}
+
+.location {
+	position: relative;
+	bottom: 1rem;
+}
+
+.hours {
+	position: relative;
+	bottom: 1rem;
+}
+
+footer {
+	background-color: black;
+	padding: 5rem;
+	color: white;
+}
+
+footer span {
+	margin-left: 3rem;
+}
+
+@media only screen and (max-width: 1024px) {
+	.navigation {
+		display: none;
+	}
+	.tablet {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.container .sunglasses {
+		display: none;
+	}
+}
+
+
+
+@media (max-width: 470px){
+	.company {
+		margin-left: 0px;
+	}
+	.intro {
+		height: 15rem;
+	}
+	.box {
+		width: 100%;
+		position: relative;
+		top: 10.7rem;
+		padding: 1rem 2rem;
+		margin-left: 0;
+	}
+	.box span {
+		font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+		font-size: 0.77rem;
+		font-weight: bold;
+	}
+	.box h1 {
+			font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+		font-size: 1rem;
+		font-weight: bold;
+	}
+	.info {
+		display: block;
+		margin: 3rem 0 5rem 0;
+}
+	.info .container {
+		margin: 2rem auto;
+	}
+	footer span {
+		font-size: 15px;
+		margin: 0 auto;
+		text-align: center;
+		display: block;
+	}
+}
